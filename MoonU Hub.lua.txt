@@ -1,11 +1,11 @@
--- Roblox Lua: Loading MoonU Hub com bordas arredondadas
+-- Roblox Lua: Loading Pulsar Hub com bordas arredondadas
 
 local Players = game:GetService("Players")
 local lp = Players.LocalPlayer
 
 -- Cria a GUI
 local ScreenGui = Instance.new("ScreenGui")
-ScreenGui.Name = "MoonULoadingGui"
+ScreenGui.Name = "PulsarLoadingGui"
 ScreenGui.ResetOnSpawn = false
 ScreenGui.Parent = lp:WaitForChild("PlayerGui")
 ScreenGui.IgnoreGuiInset = true -- garante que cobre a tela toda
@@ -29,7 +29,7 @@ local Title = Instance.new("TextLabel")
 Title.Size = UDim2.new(0, 300, 0, 50)
 Title.Position = UDim2.new(0.5, -150, 0.2, 0)
 Title.BackgroundTransparency = 1
-Title.Text = "MoonU Hub"
+Title.Text = "Pulsar Hub"
 Title.TextColor3 = Color3.fromRGB(30, 60, 120) -- azul escuro
 Title.Font = Enum.Font.GothamBold
 Title.TextScaled = true
@@ -88,8 +88,8 @@ ScreenGui:Destroy()
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/Library-ui/refs/heads/main/Redzhubui"))()
 
 local Window = redzlib:MakeWindow({
-    Title = "MoonU Hub",
-    SubTitle = "by Herry",
+    Title = "Pulsar Hub",
+    SubTitle = "by eyupbaba158",
     SaveFolder = "teste"
   })
 
